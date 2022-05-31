@@ -1,0 +1,40 @@
+from random import choice
+# ROCK-PAPER-SCISSORS
+options = ['rock', 'paper', 'scissors']
+
+for p in range(10):
+    user = input('pick an option: rock , paper, scissors:  ')
+    computer = choice(options)
+    print(computer)
+    if user not in options:
+        print('invalid input')
+    if user == computer:
+        print('it is a tie')
+        break
+    if user == 'rock':
+        if  computer == 'paper':
+            print('you loose!!!/n paper covers rock')
+        else:
+            print('you win!!! /n rock smashes scissors')
+    if user == 'paper':
+        if computer == 'rock':
+            print('you win!!!/n paper covers rock')
+        else:
+            print('you loose!!!/n rock smashes scissors')
+    if user == 'scissors':
+        if computer == 'rock':
+
+            print('you loose!!!/n rock smashes scissors')
+print('GAME HAS ENDED!')
+
+
+
+
+
+
+
+
+
+
+
+
